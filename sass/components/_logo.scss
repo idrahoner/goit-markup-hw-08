@@ -3,8 +3,8 @@
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
 
@@ -12,9 +12,13 @@
 }
 
 .navigation__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  width: fit-content;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  // padding-top: 24px;
+  // padding-bottom: 25px;
+  // margin-right: 93px;
 }
 
 .footer__logo {

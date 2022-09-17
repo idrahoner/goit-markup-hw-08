@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  justify-content: center;
 }
 
 .social__item:not(:last-child) {
@@ -31,6 +32,7 @@
 }
 
 .social__icon {
+  display: block;
   width: 20px;
   height: 20px;
   fill: currentColor;

@@ -1,25 +1,41 @@
 .clients {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+// .clients__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+  margin-bottom: 30px;
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+
   height: 92px;
+
   border-width: 1px;
   border-style: solid;
   border-color: var(--primary-soc-icon-color);
   border-radius: 4px;
 
   color: var(--primary-soc-icon-color);
-
   transition: color 250ms var(--animation-style), border-color 250ms var(--animation-style);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -28,6 +44,7 @@
 }
 
 .clients__icon {
+  display: block;
   width: 106px;
   height: 60px;
   fill: currentColor;
