@@ -4,12 +4,11 @@
   left: 0;
   z-index: 999;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 93px 15px;
+  padding: 93px 0;
   overflow-y: scroll;
 
   background-color: var(--backdrop-color);
@@ -29,9 +28,11 @@
   // left: 50%;
   // transform: translate(-50%, -50%) scale(1);
 
+  display: block;
   max-width: 450px;
-  // width: calc(100% - 30px);
-  // margin: 15px;
+  width: calc(100% - 30px);
+  min-height: 609px;
+  margin: 0 auto;
   padding: 40px;
 
   background-color: var(--primary-background-color);
