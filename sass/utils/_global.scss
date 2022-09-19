@@ -7,36 +7,11 @@ body {
   color: var(--primary-text-color);
 }
 
-// ============>>> FIXME <<<=========== \\
-// svg {
-//   width: 20px;
-//   height: 20px;
-//   fill: currentColor;
-// }
-
 img {
-  display: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
-// img {
-//   display: block;
-// }
-
-// .container {
-//   outline: 2px solid tomato;
-// }
-
-.practice {
-  display: none;
-}
-
-.team__bg-block {
-  width: 100%;
-  height: 460px;
-  background-color: seagreen;
-}
-
-// =============>>>  FIXME <<<============ \\
 
 h1,
 h2,
@@ -58,6 +33,11 @@ ul {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__caption {
@@ -68,6 +48,11 @@ ul {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .container {
@@ -75,6 +60,14 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 786px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 // .container--flex {

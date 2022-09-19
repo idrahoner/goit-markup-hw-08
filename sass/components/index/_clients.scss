@@ -1,23 +1,18 @@
 .clients {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-// .clients__item:not(:last-child) {
-//   margin-right: 30px;
-// }
-
 .clients__item {
-  width: calc((100% - 30px) / 2);
-  margin-bottom: 30px;
+  flex-basis: calc((100% - 30px) / 2);
 
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
   }
 
-  &:nth-child(2n + 1) {
-    margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 

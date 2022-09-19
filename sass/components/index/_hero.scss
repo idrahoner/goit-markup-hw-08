@@ -1,5 +1,5 @@
 .hero {
-  max-width: 480px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
@@ -7,11 +7,16 @@
   text-align: center;
 
   background-color: var(--third-background-color);
-  // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //   url(../images/background-hero.jpg);
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -25,6 +30,12 @@
   text-transform: uppercase;
 
   color: var(--primary-background-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .primary-button {
@@ -57,8 +68,10 @@
   }
 }
 
-// .primary-button--wide {
-//   min-width: 216px;
-//   padding-left: 32px;
-//   padding-right: 32px;
-// }
+.primary-button--wide {
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
