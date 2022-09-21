@@ -4,8 +4,8 @@
   left: 0;
   z-index: 999;
 
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
@@ -22,12 +22,9 @@
 }
 
 .modal-window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-
+  position: relative;
   display: block;
+  margin: auto 0;
   max-width: 450px;
   width: calc(100% - 30px);
   padding: 40px;
@@ -37,6 +34,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  transform: scale(1);
   transition: transform 300ms var(--animation-style);
 
   @media screen and (min-width: 1200px) {
@@ -45,7 +43,7 @@
 }
 
 .backdrop.is-hidden .modal-window {
-  transform: translate(-50%, 100%) scale(0);
+  transform: scale(0);
 }
 
 .close-button {
