@@ -16,6 +16,8 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
+    display: flex;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
@@ -56,14 +58,19 @@
 .portfolio__description {
   margin: auto 0;
 
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
 
   color: var(--primary-background-color);
+
+  @media screen and (min-width: 425px) {
+    font-size: 18px;
+  }
 }
 
 .portfolio__details {
+  flex-grow: 1;
   padding: 20px 24px;
 
   text-align: left;

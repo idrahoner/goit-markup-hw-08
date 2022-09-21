@@ -25,7 +25,7 @@
   color: inherit;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
 
   transition: color 250ms var(--animation-style), background-color 250ms var(--animation-style),
     box-shadow 250ms var(--animation-style);

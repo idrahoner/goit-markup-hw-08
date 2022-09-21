@@ -101,7 +101,7 @@
 
 .mobile-contacts__link {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: var(--medium-font-weight);
   font-size: 24px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -110,11 +110,12 @@
 }
 
 .mobile-contacts__link--accented {
-  font-weight: var(--medium-font-weight);
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (min-width: 380px) {
+    font-size: 34px;
+    line-height: 1.18;
+  }
 }
 
 .mobile-contacts__icon {

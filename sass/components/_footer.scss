@@ -6,6 +6,7 @@
 }
 
 .footer__container {
+  text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -19,18 +20,13 @@
 }
 
 .address {
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     margin-right: 165px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
-  }
-}
-
-.address__list {
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
 }
@@ -73,7 +69,9 @@
 }
 
 .footer__media {
-  margin-bottom: 60px;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 60px;
+  }
 }
 
 .subscripction {
@@ -84,14 +82,14 @@
 
   @media screen and (min-width: 1200px) {
     width: fit-content;
-    margin-right: 0;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
 .subscription__form {
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
     gap: 12px;
   }
 }
